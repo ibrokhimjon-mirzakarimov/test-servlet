@@ -7,11 +7,53 @@
 
     <servlet>
         <servlet-name>Home</servlet-name>
-        <servlet-class>Home</servlet-class>
+        <servlet-class>lesson1.Home</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>Home</servlet-name>
         <url-pattern>/home</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Cabinet</servlet-name>
+        <servlet-class>lesson1.Cabinet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Cabinet</servlet-name>
+        <url-pattern>/cabinet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>Pc</servlet-name>
+        <servlet-class>lesson2.servlets.Pc</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Pc</servlet-name>
+        <url-pattern>/pc</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Printer</servlet-name>
+        <servlet-class>lesson2.servlets.Printer</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Printer</servlet-name>
+        <url-pattern>/printer</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Laptop</servlet-name>
+        <servlet-class>lesson2.servlets.Laptop</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Laptop</servlet-name>
+        <url-pattern>/laptop</url-pattern>
+    </servlet-mapping>
+    
 </web-app>

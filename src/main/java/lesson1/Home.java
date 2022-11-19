@@ -1,3 +1,5 @@
+package lesson1;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -11,8 +13,8 @@ public class Home extends HttpServlet {
         try {
             PrintWriter writer = resp.getWriter();
             resp.setContentType("text/html");
-            writer.write("<h2>Hello home page from servlet</h2>");
-            writer.write("<a href='/login'>Tizimga kirish</a>");
+            writer.write("<h2>Tizimga xush kelibsiz!</h2>");
+            writer.write("<a href='/cabinet'>lesson1.Cabinet</a>");
         }catch (Exception e){
             e.printStackTrace();
         }
