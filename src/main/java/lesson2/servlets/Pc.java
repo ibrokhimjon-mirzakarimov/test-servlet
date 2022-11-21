@@ -16,7 +16,7 @@ public class Pc extends HttpServlet {
         DatabaseService db = new DatabaseService();
         try {
             db.showProductsPC();
-        } catch (SQLException throwables) {
+        } catch (SQLException | ClassNotFoundException throwables) {
             throwables.printStackTrace();
         }
     }

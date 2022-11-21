@@ -9,7 +9,9 @@ public class DatabaseService{
     private String dbUser = "postgres";
     private String dbPassword = "9966";
 
-    public void showProductsPC() throws SQLException {
+
+    public void showProductsPC() throws SQLException, ClassNotFoundException {
+        Class.forName("org.postgresql.Driver");
         Connection connection = DriverManager.getConnection(URL,dbUser,dbPassword);
         String query = "select pc.model,p.maker, pc.price from pc left join product p on p.model= pc.model;";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
