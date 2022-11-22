@@ -18,6 +18,8 @@ public class Pc extends HttpServlet {
             db.showProductsPC();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
     }
 
